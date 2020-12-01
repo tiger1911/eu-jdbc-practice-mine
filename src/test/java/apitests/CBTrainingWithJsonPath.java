@@ -49,13 +49,13 @@ public class CBTrainingWithJsonPath {
         System.out.println("zipCode = " + zipCode);
         assertEquals(zipCode,"60606");
 
-        String firstname2 = jsonPath.getString("students.firstName");
+        String firstname2 = jsonPath.getString("students.firstName"); //JsonPath'de data type problem olmaz
         System.out.println("firstname2 = " + firstname2);
 
 //        String firstname3 =response.path("students.firstName");
 //        System.out.println("firstname3 = " + firstname3);
 
-        String zipCode2= response.path("students.company[0].address.zipCode");
+        String zipCode2= response.path("students.company[0].address.zipCode"); //Response path'de Data type uygun olmali
         System.out.println("zipCode2 = " + zipCode2);
 
     }
