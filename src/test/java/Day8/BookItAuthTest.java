@@ -11,7 +11,7 @@ import static org.testng.Assert.*;
 public class BookItAuthTest {
 
     @BeforeClass
-    public void vefore(){
+    public void before(){
         baseURI = "https://cybertek-reservation-api-qa2.herokuapp.com";
     }
 
